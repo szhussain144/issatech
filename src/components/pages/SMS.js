@@ -107,7 +107,7 @@ class SMS extends React.Component {
                                                                     <p>Alpha 6 has landed, and it’s one of our biggest ships to date.</p>
                                                                 </div>
                                                                 <div class="timeline-footer d-flex align-items-center flex-wrap">
-                                                                    <i class="mdi mdi-heart-outline text-muted mr-1"></i>
+                                                                    <i class="mdi mdi mdi-signal text-muted mr-1"></i>
                                                                     <span>25</span>
                                                                     <span class="ml-md-auto font-weight-bold">10th Aug 2017</span>
                                                                 </div>
@@ -124,7 +124,7 @@ class SMS extends React.Component {
                                                                     <p>Alpha 6 has landed, and it’s one of our biggest ships to date.</p>
                                                                 </div>
                                                                 <div class="timeline-footer d-flex align-items-center flex-wrap">
-                                                                    <i class="mdi mdi-heart-outline text-muted mr-1"></i>
+                                                                    <i class="mdi mdi mdi-signal text-muted mr-1"></i>
                                                                     <span>25</span>
                                                                     <span class="ml-md-auto font-weight-bold">10th Aug 2017</span>
                                                                 </div>
@@ -141,7 +141,7 @@ class SMS extends React.Component {
                                                                     <p>Alpha 6 has landed, and it’s one of our biggest ships to date.</p>
                                                                 </div>
                                                                 <div class="timeline-footer d-flex align-items-center flex-wrap">
-                                                                    <i class="mdi mdi-heart-outline text-muted mr-1"></i>
+                                                                    <i class="mdi mdi mdi-signal text-muted mr-1"></i>
                                                                     <span>25</span>
                                                                     <span class="ml-md-auto font-weight-bold">10th Aug 2017</span>
                                                                 </div>
@@ -158,7 +158,7 @@ class SMS extends React.Component {
                                                                     <p>Alpha 6 has landed, and it’s one of our biggest ships to date.</p>
                                                                 </div>
                                                                 <div class="timeline-footer d-flex align-items-center flex-wrap">
-                                                                    <i class="mdi mdi-heart-outline text-muted mr-1"></i>
+                                                                    <i class="mdi mdi mdi-signal text-muted mr-1"></i>
                                                                     <span>25</span>
                                                                     <span class="ml-md-auto font-weight-bold">10th Aug 2017</span>
                                                                 </div>
