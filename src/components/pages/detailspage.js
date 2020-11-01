@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import Header from '../common/Header';
 import Sidebar from '../common/Sidebar';
-class Profile extends React.Component{
+class DetailsPage extends React.Component{
     componentDidMount(){
         // $("#sidebar").css('width','70px');
     }
@@ -15,7 +15,7 @@ class Profile extends React.Component{
                     <div class="main-panel">
                     <div class="content-wrapper">
                     <div class="row">
-                    
+
                     <div class="mail-list-container col-md-4 pt-4 pb-4 border-right bg-white">
                 <div class="mail-list">
                   <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"/> <i class="input-helper"></i></label></div>
@@ -62,7 +62,8 @@ class Profile extends React.Component{
                   </div>
                 </div>
               </div>
-                   
+                        {/* <li>Abdullahi Mahamed Said</li> */}
+                            
                         <div class="col-md-8">
                         <div class="card">
                             <div class="card-body">
@@ -70,7 +71,7 @@ class Profile extends React.Component{
                                 <div class="col-lg-12">
                       <div class="border-bottom text-center pb-4">
                         <div class="mb-3">
-                          <h3>Suleiman Said Hamid</h3>
+                          <h3>Berge Sag Og Trelast AS</h3>
                          
                         </div>
                      
@@ -81,50 +82,42 @@ class Profile extends React.Component{
                       <div class="py-4">
                       <p class="clearfix">
                           <span class="float-left">
-                            totalt skyldig:
+                            Saldo:
                           </span>
                           <span class="float-right text-muted">
-                             5250,00
+                             2100,00
                           </span>
                         </p>
                         <p class="clearfix">
                           <span class="float-left">
-                          skyldig i dag:
+                          saldo i dag:
                           </span>
                           <span class="float-right text-muted">
-                            2150,00
+                            2100,00
                           </span>
                         </p>
                         <p class="clearfix">
                           <span class="float-left">
-                          Sum reservasjoner:
+                          Orgnr.:
                           </span>
                           <span class="float-right text-muted">
-                            3100,00
+                            984046022
                           </span>
                         </p>
                       <p class="clearfix">
                           <span class="float-left">
-                          Aktive Klasser:
+                          Epost:
                           </span>
                           <span class="float-right text-muted">
-                            B96
+                            fakturabst@bergesag.no
                           </span>
                         </p>
                         <p class="clearfix">
                           <span class="float-left">
-                            Mobil:
+                            Kontaktperson:
                           </span>
                           <span class="float-right text-muted">
-                            93437868
-                          </span>
-                        </p>
-                        <p class="clearfix">
-                          <span class="float-left">
-                          Fodlselsnummer:
-                          </span>
-                          <span class="float-right text-muted">
-                            20057220571(48 ar,M)
+                            Rune S.Pedersen
                           </span>
                         </p>
                         <p class="clearfix">
@@ -132,7 +125,37 @@ class Profile extends React.Component{
                           Adresse:
                           </span>
                           <span class="float-right text-muted">
-                            Skuggaberg 24,5545 Vormdal
+                            Haukelivegen 676
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                          Postnummer:
+                          </span>
+                          <span class="float-right text-muted">
+                            5582
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                          sted:
+                          </span>
+                          <span class="float-right text-muted">
+                            Olensveg
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                          telefon:
+                          </span>
+                          <span class="float-right text-muted">
+                          </span>
+                        </p>
+                        <p class="clearfix">
+                          <span class="float-left">
+                          Kommentar:
+                          </span>
+                          <span class="float-right text-muted">
                           </span>
                         </p>
                         
@@ -140,15 +163,7 @@ class Profile extends React.Component{
 
                       <div className="row">
                           <div className="col-md-4">
-                          <button class="btn btn-light btn-block  ">Slett elev</button>
-                          </div>
-                          
-                          <div className="col-md-4">
-                          <button class="btn btn-success btn-block  ">kalender</button>
-                          </div>
-                          
-                          <div className="col-md-4">
-                          <button class="btn btn-success btn-block  ">kundekort</button>
+                          <button class="btn btn-success btn-block  ">Bedriftskort</button>
                           </div>
                       </div>
                       
@@ -168,4 +183,4 @@ class Profile extends React.Component{
     }
 }
 
-export default Profile;
+export default DetailsPage;

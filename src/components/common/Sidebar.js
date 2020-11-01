@@ -112,25 +112,7 @@ class Sidebar extends React.Component{
                 </a>
               </li>
             </ul>
-            <div class="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" style={{display: "block", paddingRight: 17+"px"}} aria-modal="false">
-                    <div class="modal-dialog modal-lg" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <p>Modal body text goes here.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success">Submit</button>
-                          <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                   
           </nav>
         );
     }
