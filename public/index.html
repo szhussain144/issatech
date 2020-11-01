@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" /> -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/fullcalendar.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script> -->
+    <script src="%PUBLIC_URL%/js/vendor.bundle.base.js"></script>
+    <script src="%PUBLIC_URL%/js/moment.min.js"></script>
+    <script src="%PUBLIC_URL%/js/fullcalendar.min.js"></script>
+    <script src="%PUBLIC_URL%/js/off-canvas.js"></script>
+    <script src="%PUBLIC_URL%/js/hoverable-collapse.js"></script>
+    <script src="%PUBLIC_URL%/js/template.js"></script>
+    <script src="%PUBLIC_URL%/js/settings.js"></script>
+    <script src="%PUBLIC_URL%/js/todolist.js"></script>
+    <script>
+      function fullCalender(){
+        if ($('#calendar').length) {
+                $('#calendar').fullCalendar({
+                  header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,basicWeek,basicDay'
+                  },
+                  defaultDate: '2017-07-12',
+                  navLinks: true, // can click day/week names to navigate views
+                  editable: true,
+                  eventLimit: true, // allow "more" link when too many events
+                  events: [{
+                      title: 'All Day Event',
+                      start: '2017-07-08'
+                    },
+                    {
+                      title: 'Long Event',
+                      start: '2017-07-01',
+                      end: '2017-07-07'
+                    },
+                    {
+                      id: 999,
+                      title: 'Repeating Event',
+                      start: '2017-07-09T16:00:00'
+                    },
+                    {
+                      id: 999,
+                      title: 'Repeating Event',
+                      start: '2017-07-16T16:00:00'
+                    },
+                    {
+                      title: 'Conference',
+                      start: '2017-07-11',
+                      end: '2017-07-13'
+                    },
+                    {
+                      title: 'Meeting',
+                      start: '2017-07-12T10:30:00',
+                      end: '2017-07-12T12:30:00'
+                    },
+                    {
+                      title: 'Lunch',
+                      start: '2017-07-12T12:00:00'
+                    },
+                    {
+                      title: 'Meeting',
+                      start: '2017-07-12T14:30:00'
+                    },
+                    {
+                      title: 'Happy Hour',
+                      start: '2017-07-12T17:30:00'
+                    },
+                    {
+                      title: 'Dinner',
+                      start: '2017-07-12T20:00:00'
+                    },
+                    {
+                      title: 'Birthday Party',
+                      start: '2017-07-13T07:00:00'
+                    },
+                    {
+                      title: 'Click for Google',
+                      url: 'http://google.com/',
+                      start: '2017-07-28'
+                    }
+                  ]
+                })
+              }
+      }
+      function modalLoad(){
+        $('#exampleModal-4').on('show.bs.modal', function(event) {
+          var button = $(event.relatedTarget) // Button that triggered the modal
+          var recipient = button.data('whatever') // Extract info from data-* attributes
+          // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+          // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+          var modal = $(this)
+          modal.find('.modal-title').text('New message to ' + recipient)
+          modal.find('.modal-body input').val(recipient)
+        })
+      }
+    </script>
+  </body>
+</html>
